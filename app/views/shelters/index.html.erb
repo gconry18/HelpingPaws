@@ -1,6 +1,13 @@
 <% title 'Shelter Directory' %>
 
-<% for shelter in @shelters do %>
-	<h2><%=h shelter.name %></h2>
-	<p><%= shelter.description %></p>
-<% end %>
+<div class="row">
+	<div id="sidebar" class="col-xs-3">
+	  	Ola
+	</div>
+	<div id="content" class="col-xs-9">
+	  	<% for shelter in @shelters do %>
+			<h3><%=h shelter.name %></h3>
+			<p><%= shelter.description %></p>
+		<% end %>
+	</div>
+</div>
