@@ -1,0 +1,6 @@
+<% title 'Shelter Directory' %>
+
+<% for shelter in @shelters do %>
+	<h2><%=h shelter.name %></h2>
+	<p><%= shelter.description %></p>
+<% end %>
