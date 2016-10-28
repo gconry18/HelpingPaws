@@ -1,13 +1,27 @@
 <% title 'Shelter Directory' %>
 
-<div class="row">
-	<div id="sidebar" class="col-xs-3">
-	  	Ola
-	</div>
-	<div id="content" class="col-xs-9">
+
 	  	<% for shelter in @shelters do %>
+<div class="row">
+	<div class="col-xs-12">
 			<h3><%=h shelter.name %></h3>
 			<p><%= shelter.description %></p>
-		<% end %>
+			<div class="row">
+				<span class="col-xs-3">Telephone: </span>
+				<span class="col-xs-9">-</span>
+			</div>
+			<div class="row">
+				<span class="col-xs-3">Fax: </span>
+				<span class="col-xs-9">-</span>
+			</div>
+			<div class="row">
+				<span class="col-xs-3">Email: </span>
+				<span class="col-xs-9">-</span>
+			</div>
+			<div class="row">
+				<span class="col-xs-3">Address: </span>
+				<span class="col-xs-9">-</span>
+			</div>
 	</div>
 </div>
+		<% end %>
